@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="page">
+
+    <header>
+      <div class="container">
+        <div class="wrapper">
+          <nav class="flex">
+            <div class="icon mobile-only"><img src="images/icon-menu.svg" alt="" srcset=""></div>
+            <div class="logo">
+              <img src="images/logo.svg" alt="">
+            </div>
+            <div class="desktop-only">
+              
+              <ul class="main-links flex">
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="profile flex">
+              <div class="icon shop">
+                <img src="images/icon-cart.svg" class="icon-image">
+                <div class="cart flexcol empty">
+                  <div class="text-large">
+                    <h3>Cart</h3>
+                  </div>
+                  <div class="filled-content" >
+                    <ul class="products flexcol">
+                      
+                    </ul>
+                    <a href="#" class="btn">Checkout</a>
+                  </div>
+                  <div class="empty-content">
+                    Empty List
+                  </div>
+                </div>
+              </div>
+              <div class="image">
+                <img src="images/image-avatar.png" alt="" srcset="">
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div class="container">
+        <div class="wrapper flex flexwrap">
+          <div class="gallery swiper-container">
+            
+            <div class="swiper-wrapper">
+              <div class="swiper-slide big"><a data-fslightbox href="images/image-product-1.jpg"><img src="images/image-product-1.jpg" alt=""></a></div>
+              <div class="swiper-slide big"><a data-fslightbox href="images/image-product-2.jpg"><img src="images/image-product-2.jpg" alt=""></a></div>
+              <div class="swiper-slide big"><a data-fslightbox href="images/image-product-3.jpg"><img src="images/image-product-3.jpg" alt=""></a></div>
+              <div class="swiper-slide big"><a data-fslightbox href="images/image-product-4.jpg"><img src="images/image-product-4.jpg" alt=""></a></div>
+            </div>
+            <div class="swiper-pagination desktop-only"></div>  
+            
+            <div class="swiper-button-prev mobile-only"></div>
+            <div class="swiper-button-next mobile-only"></div>
+          </div>
+          <div class="content flexcol">
+            <div class="text-mini title">
+              <h3>Sneaker Company</h3>
+            </div>
+            <div class="text-large">
+              <h1>Fall Limited Edition Sneakers</h1>
+            </div>
+            <div class="text-mini">
+              <p>These Low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer Sole. they'll withstand everything the weather can offer</p>
+            </div>
+            <div class="price">
+              <ul class="flex">
+                <li class="flex">
+                  <span class="text-large" style="display: inline-flex;">
+                    <h1>$125.00</h1>
+                  </span>
+                  <span class="text-mini discount" style="display: inline-flex;">
+                    <h5>50%</h5>
+                  </span>
+                </li>
+                <li>
+                  <span class="text-mini prev-price">
+                    <h3>$250.00</h3>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="control flex flexwrap">
+              <div class="quantity flex">
+                <a href="#" class="plus"><img src="images/icon-plus.svg" alt=""></a>
+                <strong>0</strong>
+                <a href="#" class="minus"><img src="images/icon-minus.svg" alt=""></a>
+              </div>
+              <a href="#" class="btn add-btn">
+                <span class="icon"><img src="images/icon-cart.svg" alt=""></span> Add To Cart
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
